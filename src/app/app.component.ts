@@ -13,8 +13,9 @@ export class AppComponent {
   PI: number = Math.PI;
   porcentaje: number = 0.235;
   salario: number = 1234.5;
+  
 
-  valorPromesa  = new Promise<string>((resolve) => {
+  valorPromesa  = new Promise<string>((resolve, reject) => {
     setTimeout(() => {
       resolve("Llego la data perros")
     }, 4500);
