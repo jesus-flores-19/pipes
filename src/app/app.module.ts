@@ -9,6 +9,7 @@ import localFr from '@angular/common/locales/fr'
 import { AppComponent } from './app.component';
 import { CapitalizadoPipe } from './pipes/capitalizado.pipe';
 import { DoomseguroPipe } from './pipes/doomseguro.pipe';
+import { ContrasenaPipe } from './pipes/contrasena.pipe';
 
 registerLocaleData(localEs);
 registerLocaleData(localFr);
@@ -18,7 +19,8 @@ registerLocaleData(localFr);
   declarations: [
     AppComponent,
     CapitalizadoPipe,
-    DoomseguroPipe
+    DoomseguroPipe,
+    ContrasenaPipe
   ],
   imports: [
     BrowserModule

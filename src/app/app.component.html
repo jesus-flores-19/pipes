@@ -116,6 +116,15 @@
                         <td>{{fecha | date:"MMMM-dd":"": idioma}}
                         </td>
                     </tr>
+                    <tr>
+                        <td>{{nombre}}</td>
+                        <td>contrasena:{{visible}}
+                            <br>
+                            <button (click)="cambiarVisible()" class="btn btn-outline-primary">Activar/Desactivar</button>
+                        </td>
+                        <td>{{nombre | contrasena:visible}}
+                        </td>
+                    </tr>
 
                 </tbody>
             </table>

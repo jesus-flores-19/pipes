@@ -16,7 +16,8 @@ export class AppComponent {
   salario: number = 1234.5;
   fecha: Date = new Date();
   idioma: string = "fr";
-  videoUrl: string = "https://www.youtube.com/embed/Q-vZ6ZvvSys"
+  videoUrl: string = "https://www.youtube.com/embed/Q-vZ6ZvvSys";
+  visible: boolean = true;
 
   valorPromesa  = new Promise<string>((resolve, reject) => {
     setTimeout(() => {
@@ -39,7 +40,10 @@ export class AppComponent {
     if(i ==1){this.idioma="es"}
     if(i ==2){this.idioma="en"}
     if(i ==3){this.idioma="fr"}
+  }
 
+  cambiarVisible(){
+    this.visible = !this.visible;
   }
 
 
