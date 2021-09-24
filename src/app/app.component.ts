@@ -16,6 +16,7 @@ export class AppComponent {
   salario: number = 1234.5;
   fecha: Date = new Date();
   idioma: string = "fr";
+  videoUrl: string = "https://www.youtube.com/embed/Q-vZ6ZvvSys"
 
   valorPromesa  = new Promise<string>((resolve, reject) => {
     setTimeout(() => {
