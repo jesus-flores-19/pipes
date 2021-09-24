@@ -105,7 +105,27 @@
                         <td>date:"MMMM-dd"</td>
                         <td>{{fecha | date:"MMMM-dd"}}</td>
                     </tr>
-
+                    <tr>
+                        <td>{{fecha}}</td>
+                        <td>date:"MMMM-dd":"":"en"</td>
+                        <td>{{fecha | date:"MMMM-dd":"":"en"}}</td>
+                    </tr>
+                    <tr>
+                        <td>{{fecha}}</td>
+                        <td>date:"MMMM-dd":"":"fr"</td>
+                        <td>{{fecha | date:"MMMM-dd":"":"fr"}}</td>
+                    </tr>
+                    <tr>
+                        <td>{{fecha}}</td>
+                        <td>date:"MMMM-dd":"":"{{idioma}}"
+                            <br>
+                            <button (onClick)="cambiarIdioma(es)" class="btn btn-primary">Español</button>
+                            <button (onClick)="cambiarIdioma(en)" class="btn btn-secondary">Ingles</button>
+                            <button (onClick)="cambiarIdioma(fr)" class="btn btn-warning">Frances</button>
+                        </td>
+                        <td>{{fecha | date:"MMMM-dd":"": idioma}}
+                        </td>
+                    </tr>
 
                 </tbody>
             </table>
