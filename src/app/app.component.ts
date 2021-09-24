@@ -33,8 +33,11 @@ export class AppComponent {
   }
 
 
-  cambiarIdioma(idioma: string){
-    this.idioma = idioma;
+  cambiarIdioma(i){
+    if(i ==1){this.idioma="es"}
+    if(i ==2){this.idioma="en"}
+    if(i ==3){this.idioma="fr"}
+
   }
 
 
